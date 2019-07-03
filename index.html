@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/TheBlacklist/font.css">
+    
+</head>
+<body>
+   <!-- crystal colector jumbotron/bootstrap/text-center -->
+    <div class = "container"style="background: url(assets/images/crystal-background-stock-picture-908888.jpg); width:1000px; height: 1000px;">
+                    <h1 class= 'title'><strong>Crystal Collector!</strong></h1>
+                    <div class="box1"></div>
+
+
+
+
+<div class = "row">
+    <div class = col-sm-8>
+        <div class = "panel-panel-primary" style="background:darkgoldenrod;">
+            <div class = "panel-heading">
+                <h2 class = "panel-title text-center gameInstr";><strong>Instructions:</strong> </h2>> 
+                 <p class = 'para' style="margin: 10px 10px 0px 10px;">
+                    You will be given a random number at the start of the game.
+                    <br><br>
+                 There are four crystal below. By clicking on a crystal, you will add a specific amount of points to your total score.
+                 <br><br>
+                 you won the game by matching your total score to random number, You lose the game if your total score goes above the random number.
+                 <br><br>
+                 The value of each crystal is hidden from you until you click on it.
+                 <br><br>
+                 each time when the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+        </div>
+    </div>
+
+        
+</div>
+<div class= row>
+    <div class = col-sm-3>
+        <div class = "panel-panel-primary" style="background:darkgreen; margin-top: 10px; width: 180px; height: 80px; ">
+                <div class = "panel-heading">
+                    <h2 class = "panel-title" id = "targetScore"style="text-align: left; font-size: 30px; font-display: white;"><span><strong>39</strong></span> </h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class = col-sm-9>
+            <div class = "panel-panel-primary" style="background:blue; margin-top: 10px; width: 100px; height: 100px; margin-left: 0px;">
+                    <div class = "panel-heading">
+                        <h2 class = "panel-title" style="text-align: left; font-size: 20px; margin-left: 10px; font-display: white;">wins<span id="win">0</span></h2>
+                        <br>
+                        <h2 class = "panel-title" style="text-align: left; font-size: 20px; margin-left: 10px; font-display: white;">loses<span id="loses">0</span> </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = row>
+        <div class = col-sm-12>
+            <div class="panel-panel-primary">
+                <div class = "panel-heading">
+                    <div class = "panel-body">
+                        <button class="gem" id="crystalOne"><img class="gems" src="assets/images/download (1).jpg" alt=""></button>
+                        <button class="gem" id="crystalTwo"><img class="gems" src="assets/images/download.jpg" alt=""></button>
+                        <button class="gem" id="crystalThree"><img class="gems" src="assets/images/images (1).jpg" alt=""></button>
+                        <button class="gem" id="crystalFour"><img class="gems" src="assets/images/images.jpg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class = row>
+        <div class = col-sm-8>
+                <div class="panel-panel-primary">
+                        <div class = "panel-heading">
+                                <h2 class = "panel-title text-center" style="background: chocolate; width: 200px; height: 80px; margin-bottom: 10px; font-size: 20px;"><strong>Your total score is:</strong> </h2>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+
+    <div class = row>
+            <div class = col-sm-8>
+                    <div class="panel-panel-primary">
+                            <div class = "panel-heading">
+                                    <h2 class = "panel-title text-center" id = "yourScore" style="background:teal;width: 300px; height: 100px; font-size: 40px;"><strong>24</strong> </h2>
+                            </div>
+                        </div>
+    
+            </div>
+        </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script  src="assets/javascript/game.js"> </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.gem {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+}
+
+.gems{
+    width: 180px;
+    height: 180px;
+}
+
+body {
+    text-align: center;
+}
+
+.title {
+    font-family:TheBlacklist;
+    font-size: 70px;
+    width: 700px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+.box1 {
+    position: absolute;
+    height: 100px;
+    width: 700px;
+    background-color: blue;
+    opacity: .3;
+    margin-left: 100px;
+}
+
+.gameInstr { 
+    margin-top: 120px;
+}

@@ -38,7 +38,7 @@ var startGame = function() {
 //reset the current score
     var currentScore = 0;
 
-    targetScore = getRandom(19,100);
+    targetScore = getRandom(19,120);
 
     crystal.crystalOne.value = getRandom(1,12);
     crystal.crystalTwo.value = getRandom(1,12);
@@ -48,12 +48,12 @@ var startGame = function() {
 //change the html to reflect all of these changes
 $("#yourScore").text(currentScore);
 $("#targetScore").text(targetScore);
-console.log(currentScore);
+// console.log(currentScore);
 
-console.log("..............................")
-console.log("targetScore: "+ targetScore);
-console.log("crystalOne: " + crystal.crystalOne.value + "| crystalTwo: " + crystal.crystalTwo.value + "|crystalThree: " + crystal.crystalThree.value + "|crystalFour: " + crystal.crystalFour.value);
-console.log("..............................")
+// console.log("..............................")
+// console.log("targetScore: "+ targetScore);
+// console.log("crystalOne: " + crystal.crystalOne.value + "| crystalTwo: " + crystal.crystalTwo.value + "|crystalThree: " + crystal.crystalThree.value + "|crystalFour: " + crystal.crystalFour.value);
+// console.log("..............................")
 }
 
 var addValues = function(crystal){
@@ -62,7 +62,7 @@ var addValues = function(crystal){
 
     //call the checkWin function
     checkWin();
-    console.log ("yourScore:" + currentScore);
+    //console.log ("yourScore:" + currentScore);
 
 }
 //check if user won or lost reset the game
@@ -70,7 +70,7 @@ var checkWin = function(){
 //check if current score is larger then target score
 if (currentScore > targetScore){
     alert("sorry you lost !");
-    console.log("you lost");
+   // console.log("you lost");
 
      //add to loss
      loses++;
@@ -79,9 +79,9 @@ if (currentScore > targetScore){
      //restart the game
      startGame();
 }
-else if (currentScore == targetScore){
+else if (currentScore === targetScore){
     alert ("congratulations! you won!");
-    console.log("you won");
+    //console.log("you won");
     //add to win
     win++;
     $("#win").text(win);

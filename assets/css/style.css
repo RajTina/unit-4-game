@@ -11,18 +11,39 @@
 }
 
 body {
-    text-align: center;
+    /* background-image: url("background: url(assets/images/crystal-background-stock-picture-908888.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-color: gray;
+     text-align: center;
+    font-family:TheBlacklist;
+    font-size: 20px;
+    color:white;
+     /* width: 3000pxpx;
+     margin-left: 100px;
+    margin-bottom: 30px;   */
+    /* color: white;
+    position: absolute;
+    z-index: 1; */
 }
+ /* .panel-panel-primary {
+        margin-bottom: 40px;
+        margin-top: 10px;
+        border-radius: 50%; */
+        /* filter: grayscale(1); */
+      /* } */
+
 
 .title {
     font-family:TheBlacklist;
     font-size: 70px;
     width: 700px;
-    margin-left: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-bottom: 30px;
     color: white;
     position: absolute;
     z-index: 1;
+    text-align: center;
 }
 .box1 {
     position: absolute;
@@ -30,7 +51,7 @@ body {
     width: 700px;
     background-color: blue;
     opacity: .3;
-    margin-left: 100px;
+    margin-left: 300px;
 }
 
 .gameInstr { 
